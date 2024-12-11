@@ -83,17 +83,4 @@ The project fine-tunes a T5 model to translate natural language questions into S
 ![WhatsApp Image 2024-11-22 at 14 05 22_67b57715](https://github.com/user-attachments/assets/aa8ec998-c64d-487c-8bcf-539bf4913e1c)
 
 
----
-
-## Contributing
-Contributions are welcome! Please follow these steps:
-1. Fork the repository.
-2. Create a new branch.
-3. Make your changes and submit a pull request.
-
----
-
-## License
-This project is licensed under the MIT License. See `LICENSE` for more details.
-
 
