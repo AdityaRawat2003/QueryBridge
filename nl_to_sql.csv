@@ -1,0 +1,21 @@
+question,sql_query
+How many employees have a salary over 45000?,SELECT COUNT(*) FROM Employees WHERE salary > 45000;
+List all students in the Data Science course.,SELECT * FROM Students WHERE course = 'Data Science';
+What is the total revenue from the Sales table?,SELECT SUM(revenue) FROM Sales;
+Show me all orders placed in 2023.,SELECT * FROM Orders WHERE order_date BETWEEN '2023-01-01' AND '2023-12-31';
+How many products are out of stock?,SELECT COUNT(*) FROM Products WHERE stock = 0;
+Find the average grade of students in Math class.,SELECT AVG(grade) FROM Grades WHERE subject = 'Math';
+List employees who work in the HR department.,SELECT * FROM Employees WHERE department = 'HR';
+Show all books published after 2010.,SELECT * FROM Books WHERE publish_year > 2010;
+Who is the highest-paid employee?,SELECT * FROM Employees ORDER BY salary DESC LIMIT 1;
+List all courses along with the number of students.,"SELECT course, COUNT(*) FROM Students GROUP BY course;"
+Which customers have placed more than 5 orders?,SELECT customer_id FROM Orders GROUP BY customer_id HAVING COUNT(*) > 5;
+Show me all employees who joined in the last 5 years.,"SELECT * FROM Employees WHERE join_date >= DATE_SUB(CURDATE(), INTERVAL 5 YEAR);"
+How many unique products were sold last month?,"SELECT COUNT(DISTINCT product_id) FROM Sales WHERE sale_date >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH);"
+Find the employee names and their managers.,"SELECT E.name, M.name AS manager_name FROM Employees E JOIN Managers M ON E.manager_id = M.id;"
+What is the total amount spent by each customer?,"SELECT customer_id, SUM(amount) FROM Orders GROUP BY customer_id;"
+List all students in 7th grade sorted by name.,SELECT * FROM Students WHERE grade = 7 ORDER BY name;
+How many orders were placed by customer ID 123?,SELECT COUNT(*) FROM Orders WHERE customer_id = 123;
+What is the highest order amount?,SELECT MAX(amount) FROM Orders;
+List all employees with names starting with 'A'.,SELECT * FROM Employees WHERE name LIKE 'A%';
+Show the total sales amount grouped by region.,"SELECT region, SUM(sales_amount) FROM Sales GROUP BY region;"
